@@ -1,4 +1,3 @@
-# Import the necessary libraries
 from pyPS4Controller.controller import Controller
 from roboclaw_3 import Roboclaw
 import sys
