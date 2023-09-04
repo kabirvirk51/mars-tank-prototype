@@ -1,9 +1,9 @@
 import RPi.GPIO as GPIO
 import os
-import obstacle_avoidance  # Corrected import statement
 from time import sleep
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from roboclaw_3 import Roboclaw
+from obstacle_avoidance import obstacle_avoidance
 
 host_name = ''  # Change this to your Raspberry Pi IP address
 host_port = ''  # Can choose from 1024 to 65353
