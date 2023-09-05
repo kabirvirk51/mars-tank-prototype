@@ -91,7 +91,30 @@ Node-RED can be installed on a Raspberry Pi using [these instructions](https://n
 
 ##### My Node-RED User Interface
 
-Node-RED is used to control the Raspberry Pi-powered tank and provides a versatile platform for further enhancements.
+I used Node-RED to control the Raspberry Pi on the UI Rover. I have set up different webpages on the server to monitor and control different aspects of the prototype rover.
+
+**Homepage:**
+
+On the homepage, I can perform essential tasks such as shutting down or rebooting the Pi as needed. Additionally, I can update the Pi and trigger the HTML server program remotely, initiating the web server.
+
+![Homepage Screenshot](https://user-images.githubusercontent.com/55263663/114245029-74b86700-9944-11eb-9a33-cc7af4412ed1.png)
+
+**System Monitoring:**
+
+Another dedicated page monitors vital system parameters, including the Pi's CPU temperature and available memory. This feature is particularly helpful if the Pi experiences performance issues, allowing me to identify potential overheating or memory saturation problems.
+
+![System Monitoring Screenshot](https://user-images.githubusercontent.com/55263663/114245043-7d10a200-9944-11eb-8ca0-698f7407b925.png)
+
+**Rover Control:**
+
+To operate the rover, I've implemented switches that enable control of its movements: forward, backward, left, right, and stop. Additionally, I've created a page that facilitates remote initiation of the Obstacle Avoidance program using a simple switch. These pages streamline rover testing, eliminating the need for a monitor or VNC server. The Raspberry Pi is configured to automatically launch Node-RED on startup, ensuring quick accessibility.
+
+![Rover Control Screenshot 1](https://user-images.githubusercontent.com/55263663/114245054-826dec80-9944-11eb-9798-3d0d927b39ec.png)
+
+![Rover Control Screenshot 2](https://user-images.githubusercontent.com/55263663/114245057-869a0a00-9944-11eb-8112-adffffc06441.png)
+
+In forthcoming iterations, I plan to expand the webserver's functionality by incorporating additional features and statistics, enhancing its utility when the rover operates autonomously.
+
 
 ## Autonomous Tank Programs
 
