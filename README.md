@@ -79,7 +79,7 @@ This method requires specific Python libraries, including the "roboclaw_3" libra
 
 An HTML-based server was created using Python's built-in HTTP server library. It allows for remote control of the tank through hyperlinks on a web page. Additionally, the server monitors the Raspberry Pi's CPU temperature and can initiate the obstacle avoidance program with a button click.
 
-![HTML-Based Server Screenshot](html-web-server.png.)
+<img src="img/html-web-server.png" alt="HTML-Based Server Screenshot">
 
 #### Node-RED Server
 
