@@ -4,7 +4,7 @@ Welcome to the Mars Tank Prototype project. This document provides an overview o
 
 ## Overview
 
-The primary aim of this project is to create a fully autonomous Mars Tank Prototype. The project combines both hardware and software components to enable autonomous navigation in a Mars-like environment. Key components include:
+The primary aim of this project is to create a fully autonomous Mars Tank Prototype. It combines hardware and software components to enable autonomous navigation in a Mars-like environment. Key components include:
 
 - Controlling the Mars Tank using a 2x7A Roboclaw Motor Controller.
 - Establishing a Bluetooth connection to a PS4 controller for remote control.
@@ -12,23 +12,23 @@ The primary aim of this project is to create a fully autonomous Mars Tank Protot
 - Developing a web server for remote control and monitoring.
 - Incorporating obstacle avoidance using HRSC04 Ultrasonic Sensors.
 
-By integrating these elements, we are striving to build a versatile tank prototype capable of autonomous exploration and navigation.
+By integrating these elements, we aim to build a versatile tank prototype capable of autonomous exploration and navigation.
 
 ## Objectives and Motivation
 
-This project was initiated during the 11th grade as a means to explore interests in electrical and computer engineering, programming, and embedded systems design. The primary goals were to gain hands-on experience with a Raspberry Pi, improve Python programming skills, enhance technical capabilities, and to learn PCB design.
+This project was initiated during the 11th grade as a means to explore interests in electrical and computer engineering, programming, and embedded systems design. The primary goals were to gain hands-on experience with a Raspberry Pi, improve Python programming skills, enhance technical capabilities, and learn PCB design.
 
 ## Table of Contents
 
 - [Parts List](#parts-list)
 - [Current Build](#current-build)
-     - [PCB Addition](#pcb-addition)
+   - [PCB Addition](#pcb-addition)
 - [Mobilizing the Tank](#mobilizing-the-tank)
-     - [Remote Control via PS4 Controller](#remote-control-via-ps4-controller)
-     - [Remote Control via Webservers](#remote-control-via-webservers)
-       - [HTML-Based Server](#html-based-server)
-       - [Node-RED Server](#node-red-server)
- - [Autonomous Tank Programs](#autonomous-tank-programs)
+   - [Remote Control via PS4 Controller](#remote-control-via-ps4-controller)
+   - [Remote Control via Webservers](#remote-control-via-webservers)
+     - [HTML-Based Server](#html-based-server)
+     - [Node-RED Server](#node-red-server)
+- [Autonomous Tank Programs](#autonomous-tank-programs)
    - [Obstacle Avoidance Tank](#obstacle-avoidance-tank)
      - [Obstacle Avoidance Algorithm](#obstacle-avoidance-algorithm)
      - [Obstacle Avoidance Code](#obstacle-avoidance-code)
@@ -60,7 +60,7 @@ Version 2.0 of the current tank design includes several significant improvements
 
 ### PCB Addition
 
-To optimize space within the tank, a custom-designed PCB using Autodesk Eagle was created to replace the breadboard circuit connecting the ultrasonic sensors and motors. This transition enhances efficiency and allows the breadboard to be used for prototyping other circuits with different sensors. Within a remarkable two-week timeframe, I was able to design, solder, print, and implement the board, all while learning the entire process through a Udemy course. This accomplishment showcases my dedication and rapid learning skills in the field of electronics and PCB design.
+To optimize space within the tank, a custom-designed PCB using Autodesk Eagle was created to replace the breadboard circuit connecting the ultrasonic sensors and motors. This transition enhances efficiency and allows the breadboard to be used for prototyping other circuits with different sensors.
 
 ![Updated Design with PCB Board](https://user-images.githubusercontent.com/55263663/113646131-0b331280-963d-11eb-8094-8f6ab8cfa5e2.jpg)
 ![IMG_0808](https://user-images.githubusercontent.com/55263663/109580868-2fd12300-7ab0-11eb-835c-0d006bbe778e.jpg)
@@ -79,7 +79,7 @@ This method requires specific Python libraries, including the "roboclaw_3" libra
 
 An HTML-based server was created using Python's built-in HTTP server library. It allows for remote control of the tank through hyperlinks on a web page. Additionally, the server monitors the Raspberry Pi's CPU temperature and can initiate the obstacle avoidance program with a button click.
 
-<img src="img/html-web-server.png" alt="HTML-Based Server Screenshot">
+![HTML-Based Server Screenshot](img/html-web-server.png)
 
 #### Node-RED Server
 
@@ -115,7 +115,6 @@ To operate the rover, I've implemented switches that enable control of its movem
 
 In forthcoming iterations, I plan to expand the webserver's functionality by incorporating additional features and statistics, enhancing its utility when the rover operates autonomously.
 
-
 ## Autonomous Tank Programs
 
 ### Obstacle Avoidance Tank
@@ -137,6 +136,6 @@ The code for this obstacle avoidance program is listed as "Obstacle_Avoidance.py
 
 ## Future Plans
 
-Currently, work is underway to implement lane tracking algorithms using OpenCV functions. Additionally, various components, including an LCD display for real-time data such as temperature and distance traveled, are being integrated. These enhancements aim to simulate a Mars tank, and updates are planned for the summer of 2024.
+Currently, work is underway to implement lane tracking algorithms using OpenCV functions, as well as to master PCB design utilizing Autodesk Eagle. Additionally, various components, including an LCD display for real-time data such as temperature and distance traveled, are being integrated. These enhancements aim to simulate a Mars tank, and updates are planned for the summer of 2024.
 
 **Disclaimer:** This project was completed over two months during the summer of 2023, and further developments are in progress. Thank you for your interest, and stay tuned for updates!
