@@ -79,7 +79,7 @@ This method requires specific Python libraries, including the "roboclaw_3" libra
 
 An HTML-based server was created using Python's built-in HTTP server library. It allows for remote control of the tank through hyperlinks on a web page. Additionally, the server monitors the Raspberry Pi's CPU temperature and can initiate the obstacle avoidance program with a button click.
 
-![HTML-Based Server Screenshot](https://user-images.githubusercontent.com/55263663/112916259-0efeec00-90b5-11eb-9e63-109e29d04f2a.png)
+![HTML-Based Server Screenshot](bro.png)
 
 #### Node-RED Server
 
@@ -110,7 +110,7 @@ The obstacle avoidance algorithm works as follows:
 
 #### Obstacle Avoidance Code
 
-The code for this obstacle avoidance program is listed as "Obstacle_Avoidance.py" in the [GitHub repository](https://github.com/karmsingh691/Ultra-Instinct-Rover-Project/blob/main/Obstacle_Avoidance.py).
+The code for this obstacle avoidance program is listed as "Obstacle_Avoidance.py" in the [GitHub repository](https://github.com/kabirvirk51/mars-tank-prototype/blob/main/python-scripts/obstacle_avoidance.py).
 
 ## Future Plans
 
