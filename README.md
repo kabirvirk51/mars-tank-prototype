@@ -91,7 +91,7 @@ Node-RED can be installed on a Raspberry Pi using [these instructions](https://n
 
 ##### My Node-RED User Interface
 
-I used Node-RED to control the Raspberry Pi on the UI Rover. I have set up different webpages on the server to monitor and control different aspects of the prototype rover.
+I used Node-RED to control the Raspberry Pi on the UI Tank. I have set up different webpages on the server to monitor and control different aspects of the prototype tank.
 
 **Homepage:**
 
@@ -105,15 +105,15 @@ Another dedicated page monitors vital system parameters, including the Pi's CPU 
 
 ![System Monitoring Screenshot](https://user-images.githubusercontent.com/55263663/114245043-7d10a200-9944-11eb-8ca0-698f7407b925.png)
 
-**Rover Control:**
+**Tank Control:**
 
-To operate the rover, I've implemented switches that enable control of its movements: forward, backward, left, right, and stop. Additionally, I've created a page that facilitates remote initiation of the Obstacle Avoidance program using a simple switch. These pages streamline rover testing, eliminating the need for a monitor or VNC server. The Raspberry Pi is configured to automatically launch Node-RED on startup, ensuring quick accessibility.
+To operate the tank, I've implemented switches that enable control of its movements: forward, backward, left, right, and stop. Additionally, I've created a page that facilitates remote initiation of the Obstacle Avoidance program using a simple switch. These pages streamline tank testing, eliminating the need for a monitor or VNC server. The Raspberry Pi is configured to automatically launch Node-RED on startup, ensuring quick accessibility.
 
-![Rover Control Screenshot 1](https://user-images.githubusercontent.com/55263663/114245054-826dec80-9944-11eb-9798-3d0d927b39ec.png)
+![Tank Control Screenshot 1](https://user-images.githubusercontent.com/55263663/114245054-826dec80-9944-11eb-9798-3d0d927b39ec.png)
 
-![Rover Control Screenshot 2](https://user-images.githubusercontent.com/55263663/114245057-869a0a00-9944-11eb-8112-adffffc06441.png)
+![Tank Control Screenshot 2](https://user-images.githubusercontent.com/55263663/114245057-869a0a00-9944-11eb-8112-adffffc06441.png)
 
-In forthcoming iterations, I plan to expand the webserver's functionality by incorporating additional features and statistics, enhancing its utility when the rover operates autonomously.
+In forthcoming iterations, I plan to expand the webserver's functionality by incorporating additional features and statistics, enhancing its utility when the tank operates autonomously.
 
 ## Autonomous Tank Programs
 
@@ -125,10 +125,10 @@ One of the key autonomous programs implemented in this project is obstacle avoid
 
 The obstacle avoidance algorithm works as follows:
 
-- The front sensors' responsibility is to detect objects that may be less than 30 cm from the rover.
-- If there is an object detected, the left and right sensors also check for obstacles within 15 cm from the rover.
-- If one side has a clearance of more than 15 cm, the rover is instructed to rotate in the direction of least obstruction.
-- This loop continues indefinitely, allowing the rover to navigate autonomously and avoid obstacles.
+- The front sensors' responsibility is to detect objects that may be less than 30 cm from the tank.
+- If there is an object detected, the left and right sensors also check for obstacles within 15 cm from the tank.
+- If one side has a clearance of more than 15 cm, the tank is instructed to rotate in the direction of least obstruction.
+- This loop continues indefinitely, allowing the tank to navigate autonomously and avoid obstacles.
 
 #### Obstacle Avoidance Code
 
