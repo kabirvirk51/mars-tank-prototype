@@ -62,8 +62,8 @@ Version 2.0 of the current tank design includes several significant improvements
 
 To optimize space within the tank, a custom-designed PCB using Autodesk Eagle and Udemy courseware was created to replace the breadboard circuit connecting the ultrasonic sensors and motors. This transition enhances efficiency and allows the breadboard to be used for prototyping other circuits with different sensors.
 
-![PCB Design](img/pcb-design1.png)
-![PCB Design](img/pcb-design2.png)
+![PCB Design](img/pcb-desgin1.png)
+![PCB Design](img/pcd-design2.png)
 ![Updated Design with PCB Board](https://user-images.githubusercontent.com/55263663/113646131-0b331280-963d-11eb-8094-8f6ab8cfa5e2.jpg)
 ![IMG_0808](https://user-images.githubusercontent.com/55263663/109580868-2fd12300-7ab0-11eb-835c-0d006bbe778e.jpg)
 
